@@ -1,0 +1,1904 @@
+{
+  "analysis": {
+    "logical_errors": {
+      "-GraphQL Query GetActiveCRQs-": {
+        "differences": 6,
+        "failing": 0,
+        "percentage": 0,
+        "total": 10299
+      },
+      "-GraphQL Query SchemaIntrospection-": {
+        "differences": 6,
+        "failing": 0,
+        "percentage": 0,
+        "total": 10256
+      }
+    },
+    "performance": {
+      "CPU_Utilization": {
+        "baseline": {
+          "mean": 0,
+          "standard_deviation": 0.00016,
+          "unit": "core"
+        },
+        "candidate": {
+          "mean": 0,
+          "standard_deviation": 0.00015,
+          "unit": "core"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 0,
+              "mae_value": [0.007710000000000002],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 12.64,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 2.0218611
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                0.00055, 0.00056, 0.00055, 0.00052, 0.00048, 0.00052, 0.00055,
+                0.00049, 0.0005, 0.0005, 0.00052, 0.00053, 0.00054, 0.00015,
+                0.00014, 0.00015
+              ],
+              "baseline_median": 0.00299,
+              "deviation": 100,
+              "deviation_slice": [
+                0.00244, 0.00243, 0.00244, 0.00247, 0.00251, 0.00247, 0.00244,
+                0.0025, 0.00249, 0.00249, 0.00247, 0.00246, 0.00245, 0.00284,
+                0.00285, 0.00284
+              ],
+              "median_absolute_deviation": 0.00003,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.00003
+            },
+            "mse": {
+              "deviation": 0,
+              "mseValue": [0.0000019606500000000004],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 0.0000039
+            },
+            "simpledev": {
+              "baseline_mean": 0.00292,
+              "candidate_mean": 0.00254,
+              "datasetOne": [
+                0.00295, 0.00301, 0.00302, 0.00303, 0.00309, 0.00299, 0.00299,
+                0.00299, 0.00298, 0.003, 0.00298, 0.00299, 0.00299, 0.00258,
+                0.0026, 0.00259
+              ],
+              "datasetTwo": [
+                0.00244, 0.00243, 0.00244, 0.00247, 0.00251, 0.00247, 0.00244,
+                0.0025, 0.00249, 0.00249, 0.00247, 0.00246, 0.00245, 0.00284,
+                0.00285, 0.00284
+              ],
+              "deviation": 0.0003799999999999997,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 0.00016,
+              "baseline_mean": 0.00292,
+              "candidate_mean": 0.00254,
+              "datasetOne": [
+                0.00295, 0.00301, 0.00302, 0.00303, 0.00309, 0.00299, 0.00299,
+                0.00299, 0.00298, 0.003, 0.00298, 0.00299, 0.00299, 0.00258,
+                0.0026, 0.00259
+              ],
+              "datasetTwo": [
+                0.00244, 0.00243, 0.00244, 0.00247, 0.00251, 0.00247, 0.00244,
+                0.0025, 0.00249, 0.00249, 0.00247, 0.00246, 0.00245, 0.00284,
+                0.00285, 0.00284
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                0.00295, 0.00301, 0.00302, 0.00303, 0.00309, 0.00299, 0.00299,
+                0.00299, 0.00298, 0.003, 0.00298, 0.00299, 0.00299, 0.00258,
+                0.0026, 0.00259
+              ],
+              "datasetTwo": [
+                0.00244, 0.00243, 0.00244, 0.00247, 0.00251, 0.00247, 0.00244,
+                0.0025, 0.00249, 0.00249, 0.00247, 0.00246, 0.00245, 0.00284,
+                0.00285, 0.00284
+              ],
+              "deviation_percentage": 50,
+              "deviations": 8,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              {
+                "Value": "0.002947636436781607",
+                "Timestamp": "1702399047.888"
+              },
+              {
+                "Value": "0.0030097597927254043",
+                "Timestamp": "1702399107.888"
+              },
+              {
+                "Value": "0.003020212643678173",
+                "Timestamp": "1702399167.888"
+              },
+              {
+                "Value": "0.003031719195402289",
+                "Timestamp": "1702399227.888"
+              },
+              {
+                "Value": "0.0030850147126436655",
+                "Timestamp": "1702399287.888"
+              },
+              {
+                "Value": "0.002987671034482749",
+                "Timestamp": "1702399347.888"
+              },
+              {
+                "Value": "0.0029931934482758595",
+                "Timestamp": "1702399407.888"
+              },
+              {
+                "Value": "0.002992810459770112",
+                "Timestamp": "1702399467.888"
+              },
+              {
+                "Value": "0.0029752789655172287",
+                "Timestamp": "1702399527.888"
+              },
+              {
+                "Value": "0.0029975205747126534",
+                "Timestamp": "1702399587.888"
+              },
+              {
+                "Value": "0.0029847048275862117",
+                "Timestamp": "1702399647.888"
+              },
+              {
+                "Value": "0.0029895118390804417",
+                "Timestamp": "1702399707.888"
+              },
+              {
+                "Value": "0.0029942497701149515",
+                "Timestamp": "1702399767.888"
+              },
+              {
+                "Value": "0.0025820888505747016",
+                "Timestamp": "1702399827.888"
+              },
+              {
+                "Value": "0.002603113448275862",
+                "Timestamp": "1702399887.888"
+              },
+              {
+                "Value": "0.0025948712643678287",
+                "Timestamp": "1702399947.888"
+              }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28rate%28container_cpu_usage_seconds_total%7B+container%3D%22ccm-gql-dev-dcb1%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28rate%28container_cpu_usage_seconds_total%7B+container%3D%22ccm-gql-dev-dcb1%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(rate(container_cpu_usage_seconds_total{ container=\"ccm-gql-dev-dcb1\", namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcb1-.*\"}[15m]))"
+          },
+          "candidate": {
+            "data": [
+              {
+                "Value": "0.0024409194252873424",
+                "Timestamp": "1702399047.888"
+              },
+              {
+                "Value": "0.0024324569167670524",
+                "Timestamp": "1702399107.888"
+              },
+              {
+                "Value": "0.0024360351724137816",
+                "Timestamp": "1702399167.888"
+              },
+              {
+                "Value": "0.002467198735632204",
+                "Timestamp": "1702399227.888"
+              },
+              {
+                "Value": "0.002513164482758614",
+                "Timestamp": "1702399287.888"
+              },
+              {
+                "Value": "0.0024706785057471226",
+                "Timestamp": "1702399347.888"
+              },
+              {
+                "Value": "0.0024437337931034506",
+                "Timestamp": "1702399407.888"
+              },
+              {
+                "Value": "0.0024972005747126683",
+                "Timestamp": "1702399467.888"
+              },
+              {
+                "Value": "0.0024892021839080162",
+                "Timestamp": "1702399527.888"
+              },
+              {
+                "Value": "0.0024859991954023263",
+                "Timestamp": "1702399587.888"
+              },
+              {
+                "Value": "0.0024745735065400897",
+                "Timestamp": "1702399647.888"
+              },
+              {
+                "Value": "0.0024643957471264183",
+                "Timestamp": "1702399707.888"
+              },
+              {
+                "Value": "0.0024465293103448217",
+                "Timestamp": "1702399767.888"
+              },
+              {
+                "Value": "0.002841467931034458",
+                "Timestamp": "1702399827.888"
+              },
+              {
+                "Value": "0.002846526091954027",
+                "Timestamp": "1702399887.888"
+              },
+              {
+                "Value": "0.0028387003448275775",
+                "Timestamp": "1702399947.888"
+              }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28rate%28container_cpu_usage_seconds_total%7B+container%3D%22ccm-gql-dev-dcc%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28rate%28container_cpu_usage_seconds_total%7B+container%3D%22ccm-gql-dev-dcc%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(rate(container_cpu_usage_seconds_total{ container=\"ccm-gql-dev-dcc\", namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcc-.*\"}[15m]))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 0,
+            "mean_simple_dev": 12.64,
+            "median_absolute_deviation": 100,
+            "mse": 0,
+            "rmse": 0,
+            "simpledev": 0,
+            "std_dev": 0,
+            "zscore_deviation": 50
+          },
+          "degradation": false,
+          "direction": "down",
+          "unit": "core",
+          "value": 0
+        }
+      },
+      "Memory_Used": {
+        "baseline": {
+          "mean": 171.3,
+          "standard_deviation": 0.35001,
+          "unit": "MB"
+        },
+        "candidate": {
+          "mean": 172.79,
+          "standard_deviation": 0.2424,
+          "unit": "MB"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 1.49,
+              "mae_value": [23.832039999999978],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": -0.87,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": -0.1392063
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                1.664065, 1.007815, 1.582025, 1.499995, 1.562495, 1.351565,
+                1.070315, 1.605465, 1.261715, 1.699215, 1.484375, 1.835935,
+                1.519525, 1.058595, 1.734375, 1.527345
+              ],
+              "baseline_median": 171.320315,
+              "deviation": 100,
+              "deviation_slice": [
+                172.98438, 172.32813, 172.90234, 172.82031, 172.88281,
+                172.67188, 172.39063, 172.92578, 172.58203, 173.01953,
+                172.80469, 173.15625, 172.83984, 172.37891, 173.05469, 172.84766
+              ],
+              "median_absolute_deviation": 0.15625,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.15625
+            },
+            "mse": {
+              "deviation": 1.22,
+              "mseValue": [19.557897697899964],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 39.1157954
+            },
+            "simpledev": {
+              "baseline_mean": 171.29736,
+              "candidate_mean": 172.78687,
+              "datasetOne": [
+                171.62891, 171.92969, 171.54688, 171.71094, 171.65625,
+                171.32813, 171.52734, 170.77734, 170.77734, 171.05859,
+                170.83984, 171.0625, 171.29297, 171.3125, 171.41016, 170.89844
+              ],
+              "datasetTwo": [
+                172.98438, 172.32813, 172.90234, 172.82031, 172.88281,
+                172.67188, 172.39063, 172.92578, 172.58203, 173.01953,
+                172.80469, 173.15625, 172.83984, 172.37891, 173.05469, 172.84766
+              ],
+              "deviation": -0.8695463841357483,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 0.35001,
+              "baseline_mean": 171.29736,
+              "candidate_mean": 172.78687,
+              "datasetOne": [
+                171.62891, 171.92969, 171.54688, 171.71094, 171.65625,
+                171.32813, 171.52734, 170.77734, 170.77734, 171.05859,
+                170.83984, 171.0625, 171.29297, 171.3125, 171.41016, 170.89844
+              ],
+              "datasetTwo": [
+                172.98438, 172.32813, 172.90234, 172.82031, 172.88281,
+                172.67188, 172.39063, 172.92578, 172.58203, 173.01953,
+                172.80469, 173.15625, 172.83984, 172.37891, 173.05469, 172.84766
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                171.62891, 171.92969, 171.54688, 171.71094, 171.65625,
+                171.32813, 171.52734, 170.77734, 170.77734, 171.05859,
+                170.83984, 171.0625, 171.29297, 171.3125, 171.41016, 170.89844
+              ],
+              "datasetTwo": [
+                172.98438, 172.32813, 172.90234, 172.82031, 172.88281,
+                172.67188, 172.39063, 172.92578, 172.58203, 173.01953,
+                172.80469, 173.15625, 172.83984, 172.37891, 173.05469, 172.84766
+              ],
+              "deviation_percentage": 56.25,
+              "deviations": 9,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "179965952", "Timestamp": "1702399047.888" },
+              { "Value": "180281344", "Timestamp": "1702399107.888" },
+              { "Value": "179879936", "Timestamp": "1702399167.888" },
+              { "Value": "180051968", "Timestamp": "1702399227.888" },
+              { "Value": "179994624", "Timestamp": "1702399287.888" },
+              { "Value": "179650560", "Timestamp": "1702399347.888" },
+              { "Value": "179859456", "Timestamp": "1702399407.888" },
+              { "Value": "179073024", "Timestamp": "1702399467.888" },
+              { "Value": "179073024", "Timestamp": "1702399527.888" },
+              { "Value": "179367936", "Timestamp": "1702399587.888" },
+              { "Value": "179138560", "Timestamp": "1702399647.888" },
+              { "Value": "179372032", "Timestamp": "1702399707.888" },
+              { "Value": "179613696", "Timestamp": "1702399767.888" },
+              { "Value": "179634176", "Timestamp": "1702399827.888" },
+              { "Value": "179736576", "Timestamp": "1702399887.888" },
+              { "Value": "179200000", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=container_memory_working_set_bytes%7B+container%3D%22ccm-gql-dev-dcb1%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=container_memory_working_set_bytes%7B+container%3D%22ccm-gql-dev-dcb1%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "container_memory_working_set_bytes{ container=\"ccm-gql-dev-dcb1\", namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcb1-.*\"}"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "181387264", "Timestamp": "1702399047.888" },
+              { "Value": "180699136", "Timestamp": "1702399107.888" },
+              { "Value": "181301248", "Timestamp": "1702399167.888" },
+              { "Value": "181215232", "Timestamp": "1702399227.888" },
+              { "Value": "181280768", "Timestamp": "1702399287.888" },
+              { "Value": "181059584", "Timestamp": "1702399347.888" },
+              { "Value": "180764672", "Timestamp": "1702399407.888" },
+              { "Value": "181325824", "Timestamp": "1702399467.888" },
+              { "Value": "180965376", "Timestamp": "1702399527.888" },
+              { "Value": "181424128", "Timestamp": "1702399587.888" },
+              { "Value": "181198848", "Timestamp": "1702399647.888" },
+              { "Value": "181567488", "Timestamp": "1702399707.888" },
+              { "Value": "181235712", "Timestamp": "1702399767.888" },
+              { "Value": "180752384", "Timestamp": "1702399827.888" },
+              { "Value": "181460992", "Timestamp": "1702399887.888" },
+              { "Value": "181243904", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=container_memory_working_set_bytes%7B+container%3D%22ccm-gql-dev-dcc%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=container_memory_working_set_bytes%7B+container%3D%22ccm-gql-dev-dcc%22%2C+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "container_memory_working_set_bytes{ container=\"ccm-gql-dev-dcc\", namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcc-.*\"}"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 1.49,
+            "mean_simple_dev": -0.87,
+            "median_absolute_deviation": 100,
+            "mse": 1.22,
+            "rmse": 1.56,
+            "simpledev": -0.87,
+            "std_dev": 4.26,
+            "zscore_deviation": 56.25
+          },
+          "degradation": false,
+          "direction": "up",
+          "unit": "percent",
+          "value": 0.87
+        }
+      },
+      "Network_In": {
+        "baseline": {
+          "mean": 8.77,
+          "standard_deviation": 8.80349,
+          "unit": "kb/s"
+        },
+        "candidate": {
+          "mean": 9.08,
+          "standard_deviation": 9.22403,
+          "unit": "kb/s"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 5.69,
+              "mae_value": [91.082],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": -68.37,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": -10.9396409
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                0.01297, 0.71314, 0.22322, 0.09641, 0.25319, 0.31378, 0.02909,
+                0.27082, 0.42352, 20.29821, 19.63595, 0.33216, 0.21038,
+                22.81909, 22.23983, 0.22324
+              ],
+              "baseline_median": 3.7603400000000002,
+              "deviation": 0,
+              "deviation_slice": [
+                4.47348, 3.53712, 4.01353, 3.44656, 4.03116, 3.33682, 24.05855,
+                23.39629, 4.0925, 3.54996, 26.57943, 26.00017, 3.5371
+              ],
+              "median_absolute_deviation": 0.163555,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.163555
+            },
+            "mse": {
+              "deviation": 58.95,
+              "mseValue": [943.2346597927],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 1886.4693196
+            },
+            "simpledev": {
+              "baseline_mean": 8.77328,
+              "candidate_mean": 9.07996,
+              "datasetOne": [
+                3.53597, 3.76594, 24.72377, 23.98745, 3.75474, 3.64824, 4.08659,
+                4.20839, 3.42948, 23.62907, 23.7003, 3.17457, 4.05458, 3.69836,
+                3.66663, 3.30832
+              ],
+              "datasetTwo": [
+                3.77331, 4.47348, 3.53712, 3.66393, 4.01353, 3.44656, 3.78943,
+                4.03116, 3.33682, 24.05855, 23.39629, 4.0925, 3.54996, 26.57943,
+                26.00017, 3.5371
+              ],
+              "deviation": -3.495613955100032,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 8.80349,
+              "baseline_mean": 8.77328,
+              "candidate_mean": 9.07996,
+              "datasetOne": [
+                3.53597, 3.76594, 24.72377, 23.98745, 3.75474, 3.64824, 4.08659,
+                4.20839, 3.42948, 23.62907, 23.7003, 3.17457, 4.05458, 3.69836,
+                3.66663, 3.30832
+              ],
+              "datasetTwo": [
+                3.77331, 4.47348, 3.53712, 3.66393, 4.01353, 3.44656, 3.78943,
+                4.03116, 3.33682, 24.05855, 23.39629, 4.0925, 3.54996, 26.57943,
+                26.00017, 3.5371
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                3.53597, 3.76594, 24.72377, 23.98745, 3.75474, 3.64824, 4.08659,
+                4.20839, 3.42948, 23.62907, 23.7003, 3.17457, 4.05458, 3.69836,
+                3.66663, 3.30832
+              ],
+              "datasetTwo": [
+                3.77331, 4.47348, 3.53712, 3.66393, 4.01353, 3.44656, 3.78943,
+                4.03116, 3.33682, 24.05855, 23.39629, 4.0925, 3.54996, 26.57943,
+                26.00017, 3.5371
+              ],
+              "deviation_percentage": 25,
+              "deviations": 4,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "3620.833333333333", "Timestamp": "1702399047.888" },
+              { "Value": "3856.3222222222216", "Timestamp": "1702399107.888" },
+              { "Value": "25317.144444444442", "Timestamp": "1702399167.888" },
+              { "Value": "24563.144444444442", "Timestamp": "1702399227.888" },
+              { "Value": "3844.855555555555", "Timestamp": "1702399287.888" },
+              { "Value": "3735.7999999999997", "Timestamp": "1702399347.888" },
+              { "Value": "4184.666666666666", "Timestamp": "1702399407.888" },
+              { "Value": "4309.388888888889", "Timestamp": "1702399467.888" },
+              { "Value": "3511.7888888888883", "Timestamp": "1702399527.888" },
+              { "Value": "24196.166666666664", "Timestamp": "1702399587.888" },
+              { "Value": "24269.11111111111", "Timestamp": "1702399647.888" },
+              { "Value": "3250.755555555555", "Timestamp": "1702399707.888" },
+              { "Value": "4151.888888888889", "Timestamp": "1702399767.888" },
+              { "Value": "3787.122222222222", "Timestamp": "1702399827.888" },
+              { "Value": "3754.6333333333328", "Timestamp": "1702399887.888" },
+              { "Value": "3387.7222222222217", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=rate%28container_network_receive_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B2m%5D%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=rate%28container_network_receive_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B2m%5D%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "rate(container_network_receive_bytes_total{ namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcb1-.*\"}[2m])"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "3863.8666666666663", "Timestamp": "1702399047.888" },
+              { "Value": "4580.844444444444", "Timestamp": "1702399107.888" },
+              { "Value": "3622.0111111111105", "Timestamp": "1702399167.888" },
+              { "Value": "3751.8666666666663", "Timestamp": "1702399227.888" },
+              { "Value": "4109.855555555555", "Timestamp": "1702399287.888" },
+              { "Value": "3529.2777777777774", "Timestamp": "1702399347.888" },
+              { "Value": "3880.3777777777773", "Timestamp": "1702399407.888" },
+              { "Value": "4127.911111111111", "Timestamp": "1702399467.888" },
+              { "Value": "3416.8999999999996", "Timestamp": "1702399527.888" },
+              { "Value": "24635.955555555553", "Timestamp": "1702399587.888" },
+              { "Value": "23957.799999999996", "Timestamp": "1702399647.888" },
+              { "Value": "4190.722222222222", "Timestamp": "1702399707.888" },
+              { "Value": "3635.155555555555", "Timestamp": "1702399767.888" },
+              { "Value": "27217.33333333333", "Timestamp": "1702399827.888" },
+              { "Value": "26624.177777777775", "Timestamp": "1702399887.888" },
+              { "Value": "3621.9888888888886", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=rate%28container_network_receive_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B2m%5D%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=rate%28container_network_receive_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B2m%5D%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "rate(container_network_receive_bytes_total{ namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcc-.*\"}[2m])"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 5.69,
+            "mean_simple_dev": -68.37,
+            "median_absolute_deviation": 0,
+            "mse": 58.95,
+            "rmse": 10.86,
+            "simpledev": -3.5,
+            "std_dev": 0.03,
+            "zscore_deviation": 25
+          },
+          "degradation": false,
+          "direction": "up",
+          "unit": "percent",
+          "value": 3.5
+        }
+      },
+      "Network_Out": {
+        "baseline": {
+          "mean": 77.94,
+          "standard_deviation": 10.96538,
+          "unit": "kb/s"
+        },
+        "candidate": {
+          "mean": 74.22,
+          "standard_deviation": 10.06703,
+          "unit": "kb/s"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 11.51,
+              "mae_value": [184.11423000000005],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 3.05,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 0.4887243
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                0.13709, 24.40697, 0.55456, 0.29397, 0.26265, 0.71178, 0.08703,
+                11.94595, 12.34666, 0.21143, 12.13259, 0.288, 12.24838,
+                12.74382, 11.43763, 12.18716
+              ],
+              "baseline_median": 74.9916,
+              "deviation": 0,
+              "deviation_slice": [
+                99.39857, 86.93755, 62.64494, 62.85901, 62.74322, 87.73542,
+                63.55397, 62.80444
+              ],
+              "median_absolute_deviation": 5.90443,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 5.90443
+            },
+            "mse": {
+              "deviation": 114.64,
+              "mseValue": [1834.2483792886503],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 3668.4967586
+            },
+            "simpledev": {
+              "baseline_mean": 77.94108,
+              "candidate_mean": 74.22422,
+              "datasetOne": [
+                74.69773, 87.10425, 75.48117, 99.52276, 75.03989, 74.5233,
+                62.6287, 74.68324, 87.12083, 62.72954, 63.0819, 86.75435,
+                74.52424, 75.08232, 99.13981, 74.94331
+              ],
+              "datasetTwo": [
+                74.85451, 99.39857, 74.43704, 74.69763, 75.25425, 74.27982,
+                74.90457, 86.93755, 62.64494, 75.20303, 62.85901, 75.2796,
+                62.74322, 87.73542, 63.55397, 62.80444
+              ],
+              "deviation": 4.76880741195785,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 10.96538,
+              "baseline_mean": 77.94108,
+              "candidate_mean": 74.22422,
+              "datasetOne": [
+                74.69773, 87.10425, 75.48117, 99.52276, 75.03989, 74.5233,
+                62.6287, 74.68324, 87.12083, 62.72954, 63.0819, 86.75435,
+                74.52424, 75.08232, 99.13981, 74.94331
+              ],
+              "datasetTwo": [
+                74.85451, 99.39857, 74.43704, 74.69763, 75.25425, 74.27982,
+                74.90457, 86.93755, 62.64494, 75.20303, 62.85901, 75.2796,
+                62.74322, 87.73542, 63.55397, 62.80444
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                74.69773, 87.10425, 75.48117, 99.52276, 75.03989, 74.5233,
+                62.6287, 74.68324, 87.12083, 62.72954, 63.0819, 86.75435,
+                74.52424, 75.08232, 99.13981, 74.94331
+              ],
+              "datasetTwo": [
+                74.85451, 99.39857, 74.43704, 74.69763, 75.25425, 74.27982,
+                74.90457, 86.93755, 62.64494, 75.20303, 62.85901, 75.2796,
+                62.74322, 87.73542, 63.55397, 62.80444
+              ],
+              "deviation_percentage": 50,
+              "deviations": 8,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "76490.47777777776", "Timestamp": "1702399047.888" },
+              { "Value": "89194.75555555554", "Timestamp": "1702399107.888" },
+              { "Value": "77292.72222222222", "Timestamp": "1702399167.888" },
+              { "Value": "101911.31111111109", "Timestamp": "1702399227.888" },
+              { "Value": "76840.84444444443", "Timestamp": "1702399287.888" },
+              { "Value": "76311.85555555555", "Timestamp": "1702399347.888" },
+              { "Value": "64131.788888888885", "Timestamp": "1702399407.888" },
+              { "Value": "76475.63333333333", "Timestamp": "1702399467.888" },
+              { "Value": "89211.72497305945", "Timestamp": "1702399527.888" },
+              { "Value": "64235.04444444444", "Timestamp": "1702399587.888" },
+              { "Value": "64595.86666666666", "Timestamp": "1702399647.888" },
+              { "Value": "88836.45555555554", "Timestamp": "1702399707.888" },
+              { "Value": "76312.82222222221", "Timestamp": "1702399767.888" },
+              { "Value": "76884.29999999999", "Timestamp": "1702399827.888" },
+              { "Value": "101519.16581485268", "Timestamp": "1702399887.888" },
+              { "Value": "76741.94444444444", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=rate%28container_network_transmit_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B2m%5D%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=rate%28container_network_transmit_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcb1-.%2A%22%7D%5B2m%5D%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "rate(container_network_transmit_bytes_total{ namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcb1-.*\"}[2m])"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "76651.02222222221", "Timestamp": "1702399047.888" },
+              { "Value": "101784.13333333332", "Timestamp": "1702399107.888" },
+              { "Value": "76223.53333333333", "Timestamp": "1702399167.888" },
+              { "Value": "76490.37777777777", "Timestamp": "1702399227.888" },
+              { "Value": "77060.35555555555", "Timestamp": "1702399287.888" },
+              { "Value": "76062.53333333333", "Timestamp": "1702399347.888" },
+              { "Value": "76702.27777777777", "Timestamp": "1702399407.888" },
+              { "Value": "89024.05555555555", "Timestamp": "1702399467.888" },
+              { "Value": "64148.422222222216", "Timestamp": "1702399527.888" },
+              { "Value": "77007.9", "Timestamp": "1702399587.888" },
+              { "Value": "64367.62222222221", "Timestamp": "1702399647.888" },
+              { "Value": "77086.3111111111", "Timestamp": "1702399707.888" },
+              { "Value": "64249.05555555555", "Timestamp": "1702399767.888" },
+              { "Value": "89841.06666666665", "Timestamp": "1702399827.888" },
+              { "Value": "65079.266666666656", "Timestamp": "1702399887.888" },
+              { "Value": "64311.74444444443", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=rate%28container_network_transmit_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B2m%5D%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=rate%28container_network_transmit_bytes_total%7B+namespace%3D~%22sre-opus-retrograde%22%2C+pod%3D~%22ccm-gql-dev-dcc-.%2A%22%7D%5B2m%5D%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "rate(container_network_transmit_bytes_total{ namespace=~\"sre-opus-retrograde\", pod=~\"ccm-gql-dev-dcc-.*\"}[2m])"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 11.51,
+            "mean_simple_dev": 3.05,
+            "median_absolute_deviation": 0,
+            "mse": 114.64,
+            "rmse": 15.14,
+            "simpledev": 4.77,
+            "std_dev": 0.34,
+            "zscore_deviation": 50
+          },
+          "degradation": false,
+          "direction": "down",
+          "unit": "percent",
+          "value": 4.77
+        }
+      },
+      "P50_Latency": {
+        "baseline": {
+          "mean": 4.29,
+          "standard_deviation": 0.07486,
+          "unit": "ms"
+        },
+        "candidate": {
+          "mean": 4.13,
+          "standard_deviation": 0.05999,
+          "unit": "ms"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 0.16,
+              "mae_value": [2.6372199999999992],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 3.8,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 0.608763
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                0.256, 0.184, 0.14264, 0.12488, 0.10362, 0.13616, 0.17862,
+                0.13695, 0.08247, 0.10555, 0.15529, 0.24315, 0.22105, 0.21103,
+                0.28527, 0.24806
+              ],
+              "baseline_median": 4.3036200000000004,
+              "deviation": 100,
+              "deviation_slice": [
+                4.04762, 4.11962, 4.16098, 4.17874, 4.2, 4.16746, 4.125,
+                4.16667, 4.22115, 4.19807, 4.14833, 4.06047, 4.08257, 4.09259,
+                4.01835, 4.05556
+              ],
+              "median_absolute_deviation": 0.049085,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.049085
+            },
+            "mse": {
+              "deviation": 0.02,
+              "mseValue": [0.30896563190000015],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 0.6179313
+            },
+            "simpledev": {
+              "baseline_mean": 4.29253,
+              "candidate_mean": 4.1277,
+              "datasetOne": [
+                4.16393, 4.17409, 4.20988, 4.2314, 4.27273, 4.26667, 4.23651,
+                4.30472, 4.30252, 4.32218, 4.37069, 4.38197, 4.33047, 4.3133,
+                4.35345, 4.44589
+              ],
+              "datasetTwo": [
+                4.04762, 4.11962, 4.16098, 4.17874, 4.2, 4.16746, 4.125,
+                4.16667, 4.22115, 4.19807, 4.14833, 4.06047, 4.08257, 4.09259,
+                4.01835, 4.05556
+              ],
+              "deviation": 3.8399265701113383,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 15
+            },
+            "std_dev": {
+              "baseline_deviation": 0.07486,
+              "baseline_mean": 4.29253,
+              "candidate_mean": 4.1277,
+              "datasetOne": [
+                4.16393, 4.17409, 4.20988, 4.2314, 4.27273, 4.26667, 4.23651,
+                4.30472, 4.30252, 4.32218, 4.37069, 4.38197, 4.33047, 4.3133,
+                4.35345, 4.44589
+              ],
+              "datasetTwo": [
+                4.04762, 4.11962, 4.16098, 4.17874, 4.2, 4.16746, 4.125,
+                4.16667, 4.22115, 4.19807, 4.14833, 4.06047, 4.08257, 4.09259,
+                4.01835, 4.05556
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                4.16393, 4.17409, 4.20988, 4.2314, 4.27273, 4.26667, 4.23651,
+                4.30472, 4.30252, 4.32218, 4.37069, 4.38197, 4.33047, 4.3133,
+                4.35345, 4.44589
+              ],
+              "datasetTwo": [
+                4.04762, 4.11962, 4.16098, 4.17874, 4.2, 4.16746, 4.125,
+                4.16667, 4.22115, 4.19807, 4.14833, 4.06047, 4.08257, 4.09259,
+                4.01835, 4.05556
+              ],
+              "deviation_percentage": 62.5,
+              "deviations": 10,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "4.163934426229508", "Timestamp": "1702399047.888" },
+              { "Value": "4.174089068825911", "Timestamp": "1702399107.888" },
+              { "Value": "4.209876543209877", "Timestamp": "1702399167.888" },
+              { "Value": "4.231404958677686", "Timestamp": "1702399227.888" },
+              { "Value": "4.272727272727272", "Timestamp": "1702399287.888" },
+              { "Value": "4.266666666666667", "Timestamp": "1702399347.888" },
+              { "Value": "4.236514522821577", "Timestamp": "1702399407.888" },
+              { "Value": "4.304721030042918", "Timestamp": "1702399467.888" },
+              { "Value": "4.302521008403361", "Timestamp": "1702399527.888" },
+              { "Value": "4.322175732217573", "Timestamp": "1702399587.888" },
+              { "Value": "4.370689655172415", "Timestamp": "1702399647.888" },
+              { "Value": "4.381974248927039", "Timestamp": "1702399707.888" },
+              { "Value": "4.330472103004292", "Timestamp": "1702399767.888" },
+              { "Value": "4.313304721030043", "Timestamp": "1702399827.888" },
+              { "Value": "4.3534482758620685", "Timestamp": "1702399887.888" },
+              { "Value": "4.445887445887446", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.50%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.50%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.50,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcb1\", pod=~\"ccm-gql-dev-dcb1.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "4.0476190476190474", "Timestamp": "1702399047.888" },
+              { "Value": "4.119617224880383", "Timestamp": "1702399107.888" },
+              { "Value": "4.160975609756097", "Timestamp": "1702399167.888" },
+              { "Value": "4.178743961352657", "Timestamp": "1702399227.888" },
+              { "Value": "4.199999999999999", "Timestamp": "1702399287.888" },
+              { "Value": "4.167464114832536", "Timestamp": "1702399347.888" },
+              { "Value": "4.125", "Timestamp": "1702399407.888" },
+              { "Value": "4.166666666666666", "Timestamp": "1702399467.888" },
+              { "Value": "4.221153846153846", "Timestamp": "1702399527.888" },
+              { "Value": "4.1980676328502415", "Timestamp": "1702399587.888" },
+              { "Value": "4.148325358851674", "Timestamp": "1702399647.888" },
+              { "Value": "4.060465116279071", "Timestamp": "1702399707.888" },
+              { "Value": "4.08256880733945", "Timestamp": "1702399767.888" },
+              { "Value": "4.0925925925925934", "Timestamp": "1702399827.888" },
+              { "Value": "4.0183486238532105", "Timestamp": "1702399887.888" },
+              { "Value": "4.055555555555556", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.50%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.50%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.50,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcc\", pod=~\"ccm-gql-dev-dcc.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 0.16,
+            "mean_simple_dev": 3.8,
+            "median_absolute_deviation": 100,
+            "mse": 0.02,
+            "rmse": 0.2,
+            "simpledev": 3.84,
+            "std_dev": 2.2,
+            "zscore_deviation": 62.5
+          },
+          "degradation": false,
+          "direction": "down",
+          "unit": "percent",
+          "value": 3.84
+        }
+      },
+      "P90_Latency": {
+        "baseline": {
+          "mean": 8.94,
+          "standard_deviation": 0.03244,
+          "unit": "ms"
+        },
+        "candidate": {
+          "mean": 8.8,
+          "standard_deviation": 0.0274,
+          "unit": "ms"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 0.13,
+              "mae_value": [2.125959999999999],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 1.49,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 0.2377796
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                0.19894, 0.17795, 0.13861, 0.11144, 0.12061, 0.12546, 0.13715,
+                0.10506, 0.09507, 0.08868, 0.10352, 0.14042, 0.128, 0.13503,
+                0.12686, 0.128
+              ],
+              "baseline_median": 8.93209,
+              "deviation": 100,
+              "deviation_slice": [
+                8.73315, 8.75414, 8.79348, 8.82065, 8.81148, 8.80663, 8.79494,
+                8.82703, 8.83702, 8.84341, 8.82857, 8.79167, 8.80409, 8.79706,
+                8.80523, 8.80409
+              ],
+              "median_absolute_deviation": 0.012085,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.012085
+            },
+            "mse": {
+              "deviation": 0.01,
+              "mseValue": [0.1491448182],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 0.2982896
+            },
+            "simpledev": {
+              "baseline_mean": 8.93616,
+              "candidate_mean": 8.80329,
+              "datasetOne": [
+                8.86527, 8.91964, 8.89941, 8.93275, 8.93143, 8.9152, 8.9142,
+                8.95198, 8.9435, 8.91667, 8.98066, 8.99435, 8.92655, 8.93855,
+                8.96448, 8.98396
+              ],
+              "datasetTwo": [
+                8.73315, 8.75414, 8.79348, 8.82065, 8.81148, 8.80663, 8.79494,
+                8.82703, 8.83702, 8.84341, 8.82857, 8.79167, 8.80409, 8.79706,
+                8.80523, 8.80409
+              ],
+              "deviation": 1.486880270720295,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 15
+            },
+            "std_dev": {
+              "baseline_deviation": 0.03244,
+              "baseline_mean": 8.93616,
+              "candidate_mean": 8.80329,
+              "datasetOne": [
+                8.86527, 8.91964, 8.89941, 8.93275, 8.93143, 8.9152, 8.9142,
+                8.95198, 8.9435, 8.91667, 8.98066, 8.99435, 8.92655, 8.93855,
+                8.96448, 8.98396
+              ],
+              "datasetTwo": [
+                8.73315, 8.75414, 8.79348, 8.82065, 8.81148, 8.80663, 8.79494,
+                8.82703, 8.83702, 8.84341, 8.82857, 8.79167, 8.80409, 8.79706,
+                8.80523, 8.80409
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                8.86527, 8.91964, 8.89941, 8.93275, 8.93143, 8.9152, 8.9142,
+                8.95198, 8.9435, 8.91667, 8.98066, 8.99435, 8.92655, 8.93855,
+                8.96448, 8.98396
+              ],
+              "datasetTwo": [
+                8.73315, 8.75414, 8.79348, 8.82065, 8.81148, 8.80663, 8.79494,
+                8.82703, 8.83702, 8.84341, 8.82857, 8.79167, 8.80409, 8.79706,
+                8.80523, 8.80409
+              ],
+              "deviation_percentage": 31.25,
+              "deviations": 5,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "8.865269461077844", "Timestamp": "1702399047.888" },
+              { "Value": "8.919642857142856", "Timestamp": "1702399107.888" },
+              { "Value": "8.899408284023668", "Timestamp": "1702399167.888" },
+              { "Value": "8.932748538011698", "Timestamp": "1702399227.888" },
+              { "Value": "8.931428571428572", "Timestamp": "1702399287.888" },
+              { "Value": "8.915204678362574", "Timestamp": "1702399347.888" },
+              { "Value": "8.914201183431954", "Timestamp": "1702399407.888" },
+              { "Value": "8.951977401129945", "Timestamp": "1702399467.888" },
+              { "Value": "8.943502824858758", "Timestamp": "1702399527.888" },
+              { "Value": "8.916666666666668", "Timestamp": "1702399587.888" },
+              { "Value": "8.980662983425413", "Timestamp": "1702399647.888" },
+              { "Value": "8.994350282485875", "Timestamp": "1702399707.888" },
+              { "Value": "8.926553672316386", "Timestamp": "1702399767.888" },
+              { "Value": "8.93854748603352", "Timestamp": "1702399827.888" },
+              { "Value": "8.964480874316939", "Timestamp": "1702399887.888" },
+              { "Value": "8.983957219251339", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.90%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.90%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.90,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcb1\", pod=~\"ccm-gql-dev-dcb1.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "8.733146067415731", "Timestamp": "1702399047.888" },
+              { "Value": "8.75414364640884", "Timestamp": "1702399107.888" },
+              { "Value": "8.793478260869565", "Timestamp": "1702399167.888" },
+              { "Value": "8.820652173913045", "Timestamp": "1702399227.888" },
+              { "Value": "8.811475409836065", "Timestamp": "1702399287.888" },
+              { "Value": "8.806629834254142", "Timestamp": "1702399347.888" },
+              { "Value": "8.79494382022472", "Timestamp": "1702399407.888" },
+              { "Value": "8.827027027027029", "Timestamp": "1702399467.888" },
+              { "Value": "8.837016574585636", "Timestamp": "1702399527.888" },
+              { "Value": "8.843406593406595", "Timestamp": "1702399587.888" },
+              { "Value": "8.828571428571431", "Timestamp": "1702399647.888" },
+              { "Value": "8.791666666666666", "Timestamp": "1702399707.888" },
+              { "Value": "8.80409356725146", "Timestamp": "1702399767.888" },
+              { "Value": "8.797058823529412", "Timestamp": "1702399827.888" },
+              { "Value": "8.805232558139535", "Timestamp": "1702399887.888" },
+              { "Value": "8.80409356725146", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.90%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.90%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.90,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcc\", pod=~\"ccm-gql-dev-dcc.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 0.13,
+            "mean_simple_dev": 1.49,
+            "median_absolute_deviation": 100,
+            "mse": 0.01,
+            "rmse": 0.14,
+            "simpledev": 1.49,
+            "std_dev": 4.1,
+            "zscore_deviation": 31.25
+          },
+          "degradation": false,
+          "direction": "down",
+          "unit": "percent",
+          "value": 1.49
+        }
+      },
+      "P999_Latency": {
+        "baseline": {
+          "mean": 24.12,
+          "standard_deviation": 0.09751,
+          "unit": "ms"
+        },
+        "candidate": {
+          "mean": 20.21,
+          "standard_deviation": 4.96246,
+          "unit": "ms"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 3.91,
+              "mae_value": [62.481480000000005],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 16.17,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 2.587991
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                14.163495, 14.163185, 14.162975, 2.563125, 2.555625, 2.533125,
+                2.518125, 2.518125, 1.425625, 1.405625, 0.834375, 0.826875,
+                0.830625, 0.838125, 0.834375, 0.838125
+              ],
+              "baseline_median": 24.150624999999998,
+              "deviation": 0,
+              "deviation_slice": [
+                9.98713, 9.98744, 9.98765, 21.5875, 21.595, 21.6175, 21.6325,
+                21.6325, 22.725, 22.745
+              ],
+              "median_absolute_deviation": 1.13375,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 1.13375
+            },
+            "mse": {
+              "deviation": 20.03,
+              "mseValue": [320.53287090189997],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 641.0657418
+            },
+            "simpledev": {
+              "baseline_mean": 24.1175,
+              "candidate_mean": 20.2124,
+              "datasetOne": [
+                24.03786, 24.245, 24.1525, 24.24167, 24.14875, 24.15438,
+                24.16188, 24.15438, 24.14875, 23.875, 24.15812, 24.25667,
+                24.03571, 24.03571, 24.03786, 24.03571
+              ],
+              "datasetTwo": [
+                9.98713, 9.98744, 9.98765, 21.5875, 21.595, 21.6175, 21.6325,
+                21.6325, 22.725, 22.745, 23.31625, 23.32375, 23.32, 23.3125,
+                23.31625, 23.3125
+              ],
+              "deviation": 16.191976780346227,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 15
+            },
+            "std_dev": {
+              "baseline_deviation": 0.09751,
+              "baseline_mean": 24.1175,
+              "candidate_mean": 20.2124,
+              "datasetOne": [
+                24.03786, 24.245, 24.1525, 24.24167, 24.14875, 24.15438,
+                24.16188, 24.15438, 24.14875, 23.875, 24.15812, 24.25667,
+                24.03571, 24.03571, 24.03786, 24.03571
+              ],
+              "datasetTwo": [
+                9.98713, 9.98744, 9.98765, 21.5875, 21.595, 21.6175, 21.6325,
+                21.6325, 22.725, 22.745, 23.31625, 23.32375, 23.32, 23.3125,
+                23.31625, 23.3125
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                24.03786, 24.245, 24.1525, 24.24167, 24.14875, 24.15438,
+                24.16188, 24.15438, 24.14875, 23.875, 24.15812, 24.25667,
+                24.03571, 24.03571, 24.03786, 24.03571
+              ],
+              "datasetTwo": [
+                9.98713, 9.98744, 9.98765, 21.5875, 21.595, 21.6175, 21.6325,
+                21.6325, 22.725, 22.745, 23.31625, 23.32375, 23.32, 23.3125,
+                23.31625, 23.3125
+              ],
+              "deviation_percentage": 50,
+              "deviations": 8,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "24.037857142857074", "Timestamp": "1702399047.888" },
+              { "Value": "24.245000000000047", "Timestamp": "1702399107.888" },
+              { "Value": "24.152499999999932", "Timestamp": "1702399167.888" },
+              { "Value": "24.24166666666661", "Timestamp": "1702399227.888" },
+              { "Value": "24.14875", "Timestamp": "1702399287.888" },
+              { "Value": "24.154375", "Timestamp": "1702399347.888" },
+              { "Value": "24.161875000000073", "Timestamp": "1702399407.888" },
+              { "Value": "24.154375", "Timestamp": "1702399467.888" },
+              { "Value": "24.14875", "Timestamp": "1702399527.888" },
+              { "Value": "23.875000000000085", "Timestamp": "1702399587.888" },
+              { "Value": "24.158124999999938", "Timestamp": "1702399647.888" },
+              { "Value": "24.256666666666632", "Timestamp": "1702399707.888" },
+              { "Value": "24.03571428571437", "Timestamp": "1702399767.888" },
+              { "Value": "24.03571428571437", "Timestamp": "1702399827.888" },
+              { "Value": "24.037857142857074", "Timestamp": "1702399887.888" },
+              { "Value": "24.03571428571437", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.999%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.999%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.999,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcb1\", pod=~\"ccm-gql-dev-dcb1.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "9.987126436781608", "Timestamp": "1702399047.888" },
+              { "Value": "9.987444444444442", "Timestamp": "1702399107.888" },
+              { "Value": "9.987650273224043", "Timestamp": "1702399167.888" },
+              { "Value": "21.587499999999622", "Timestamp": "1702399227.888" },
+              { "Value": "21.595000000000034", "Timestamp": "1702399287.888" },
+              { "Value": "21.61750000000006", "Timestamp": "1702399347.888" },
+              { "Value": "21.63249999999967", "Timestamp": "1702399407.888" },
+              { "Value": "21.63249999999967", "Timestamp": "1702399467.888" },
+              { "Value": "22.724999999999824", "Timestamp": "1702399527.888" },
+              { "Value": "22.745000000000005", "Timestamp": "1702399587.888" },
+              { "Value": "23.316249999999876", "Timestamp": "1702399647.888" },
+              { "Value": "23.323750000000164", "Timestamp": "1702399707.888" },
+              { "Value": "23.32", "Timestamp": "1702399767.888" },
+              { "Value": "23.312500000000156", "Timestamp": "1702399827.888" },
+              { "Value": "23.316249999999876", "Timestamp": "1702399887.888" },
+              { "Value": "23.312500000000156", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.999%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.999%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.999,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcc\", pod=~\"ccm-gql-dev-dcc.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 3.91,
+            "mean_simple_dev": 16.17,
+            "median_absolute_deviation": 0,
+            "mse": 20.03,
+            "rmse": 6.33,
+            "simpledev": 16.19,
+            "std_dev": 40.05,
+            "zscore_deviation": 50
+          },
+          "degradation": true,
+          "direction": "down",
+          "unit": "percent",
+          "value": 16.19
+        }
+      },
+      "P99_Latency": {
+        "baseline": {
+          "mean": 16.17,
+          "standard_deviation": 0.97506,
+          "unit": "ms"
+        },
+        "candidate": {
+          "mean": 9.95,
+          "standard_deviation": 0.03791,
+          "unit": "ms"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 6.23,
+              "mae_value": [99.66283999999999],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": 38.27,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": 6.1232289
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                6.63294, 6.63084, 6.60245, 6.57527, 6.57592, 6.57586, 6.57619,
+                6.5749, 6.54796, 6.54773, 6.52054, 6.51994, 6.52058, 6.52066,
+                6.52108, 6.52058
+              ],
+              "baseline_median": 16.50625,
+              "deviation": 100,
+              "deviation_slice": [
+                9.87331, 9.87541, 9.9038, 9.93098, 9.93033, 9.93039, 9.93006,
+                9.93135, 9.95829, 9.95852, 9.98571, 9.98631, 9.98567, 9.98559,
+                9.98517, 9.98567
+              ],
+              "median_absolute_deviation": 0.04056,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 0.04056
+            },
+            "mse": {
+              "deviation": 19.89,
+              "mseValue": [318.18508222319997],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 636.3701644
+            },
+            "simpledev": {
+              "baseline_mean": 16.17496,
+              "candidate_mean": 9.94604,
+              "datasetOne": [
+                15.37857, 17.45, 16.525, 17.41667, 16.4875, 16.54375, 16.61875,
+                16.54375, 16.4875, 13.75, 16.58125, 17.56667, 15.35714,
+                15.35714, 15.37857, 15.35714
+              ],
+              "datasetTwo": [
+                9.87331, 9.87541, 9.9038, 9.93098, 9.93033, 9.93039, 9.93006,
+                9.93135, 9.95829, 9.95852, 9.98571, 9.98631, 9.98567, 9.98559,
+                9.98517, 9.98567
+              ],
+              "deviation": 38.509647009946235,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 15
+            },
+            "std_dev": {
+              "baseline_deviation": 0.97506,
+              "baseline_mean": 16.17496,
+              "candidate_mean": 9.94604,
+              "datasetOne": [
+                15.37857, 17.45, 16.525, 17.41667, 16.4875, 16.54375, 16.61875,
+                16.54375, 16.4875, 13.75, 16.58125, 17.56667, 15.35714,
+                15.35714, 15.37857, 15.35714
+              ],
+              "datasetTwo": [
+                9.87331, 9.87541, 9.9038, 9.93098, 9.93033, 9.93039, 9.93006,
+                9.93135, 9.95829, 9.95852, 9.98571, 9.98631, 9.98567, 9.98559,
+                9.98517, 9.98567
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                15.37857, 17.45, 16.525, 17.41667, 16.4875, 16.54375, 16.61875,
+                16.54375, 16.4875, 13.75, 16.58125, 17.56667, 15.35714,
+                15.35714, 15.37857, 15.35714
+              ],
+              "datasetTwo": [
+                9.87331, 9.87541, 9.9038, 9.93098, 9.93033, 9.93039, 9.93006,
+                9.93135, 9.95829, 9.95852, 9.98571, 9.98631, 9.98567, 9.98559,
+                9.98517, 9.98567
+              ],
+              "deviation_percentage": 56.25,
+              "deviations": 9,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "15.378571428571371", "Timestamp": "1702399047.888" },
+              { "Value": "17.45", "Timestamp": "1702399107.888" },
+              { "Value": "16.524999999999864", "Timestamp": "1702399167.888" },
+              { "Value": "17.416666666666718", "Timestamp": "1702399227.888" },
+              { "Value": "16.48749999999999", "Timestamp": "1702399287.888" },
+              { "Value": "16.543750000000045", "Timestamp": "1702399347.888" },
+              { "Value": "16.61875", "Timestamp": "1702399407.888" },
+              { "Value": "16.543750000000045", "Timestamp": "1702399467.888" },
+              { "Value": "16.48749999999999", "Timestamp": "1702399527.888" },
+              { "Value": "13.75000000000012", "Timestamp": "1702399587.888" },
+              { "Value": "16.58124999999992", "Timestamp": "1702399647.888" },
+              { "Value": "17.56666666666664", "Timestamp": "1702399707.888" },
+              { "Value": "15.35714285714305", "Timestamp": "1702399767.888" },
+              { "Value": "15.35714285714305", "Timestamp": "1702399827.888" },
+              { "Value": "15.378571428571371", "Timestamp": "1702399887.888" },
+              { "Value": "15.35714285714305", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.99%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.99%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcb1%22%2C+pod%3D~%22ccm-gql-dev-dcb1.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.99,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcb1\", pod=~\"ccm-gql-dev-dcb1.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "9.873314606741573", "Timestamp": "1702399047.888" },
+              { "Value": "9.875414364640884", "Timestamp": "1702399107.888" },
+              { "Value": "9.903804347826085", "Timestamp": "1702399167.888" },
+              { "Value": "9.930978260869566", "Timestamp": "1702399227.888" },
+              { "Value": "9.930327868852459", "Timestamp": "1702399287.888" },
+              { "Value": "9.930386740331489", "Timestamp": "1702399347.888" },
+              { "Value": "9.930056179775283", "Timestamp": "1702399407.888" },
+              { "Value": "9.931351351351351", "Timestamp": "1702399467.888" },
+              { "Value": "9.95828729281768", "Timestamp": "1702399527.888" },
+              { "Value": "9.958516483516483", "Timestamp": "1702399587.888" },
+              { "Value": "9.98571428571429", "Timestamp": "1702399647.888" },
+              { "Value": "9.986309523809524", "Timestamp": "1702399707.888" },
+              { "Value": "9.985672514619882", "Timestamp": "1702399767.888" },
+              { "Value": "9.985588235294117", "Timestamp": "1702399827.888" },
+              { "Value": "9.98517441860465", "Timestamp": "1702399887.888" },
+              { "Value": "9.985672514619882", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=histogram_quantile%280.99%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prom-istio.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=histogram_quantile%280.99%2Csum%28rate%28envoy_cluster_upstream_rq_time_bucket%7Bnamespace%3D~%22sre-opus-retrograde%22%2Capp%3D%22ccm-gql-dev-dcc%22%2C+pod%3D~%22ccm-gql-dev-dcc.%2A%22%2Ccluster_name%3D~%22inbound.%2A%22%7D%5B15m%5D%29%29by+%28le%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "histogram_quantile(0.99,sum(rate(envoy_cluster_upstream_rq_time_bucket{namespace=~\"sre-opus-retrograde\",app=\"ccm-gql-dev-dcc\", pod=~\"ccm-gql-dev-dcc.*\",cluster_name=~\"inbound.*\"}[15m]))by (le))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 6.23,
+            "mean_simple_dev": 38.27,
+            "median_absolute_deviation": 100,
+            "mse": 19.89,
+            "rmse": 6.31,
+            "simpledev": 38.51,
+            "std_dev": 6.39,
+            "zscore_deviation": 56.25
+          },
+          "degradation": true,
+          "direction": "down",
+          "unit": "percent",
+          "value": 38.51
+        }
+      },
+      "Requests_2xx": {
+        "baseline": {
+          "mean": 286,
+          "standard_deviation": 2.61114,
+          "unit": "Reqs"
+        },
+        "candidate": {
+          "mean": 286,
+          "standard_deviation": 2.65007,
+          "unit": "Reqs"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 2,
+              "mae_value": [25.862079999999935],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": -0,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": -0.0111859
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                1.03448, 2.06897, 4.13793, 4.13793, 6.2069, 0, 0, 4.13793,
+                1.03448, 1.03448, 2.06896, 2.06896, 2.06896, 1.03448, 1.03448,
+                3.10345
+              ],
+              "baseline_median": 285.51724,
+              "deviation": 0,
+              "deviation_slice": [
+                287.58621, 289.65517, 289.65517, 291.72414, 289.65517,
+                283.44828, 283.44828, 283.44828, 282.41379
+              ],
+              "median_absolute_deviation": 1.03448,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 1.03448
+            },
+            "mse": {
+              "deviation": 2,
+              "mseValue": [29.42928014280003],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 58.8585603
+            },
+            "simpledev": {
+              "baseline_mean": 286.09914,
+              "candidate_mean": 286.2931,
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "degradation_type": "count",
+              "deviation": -0.19396000000000413,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 2.61114,
+              "baseline_mean": 286.09914,
+              "candidate_mean": 286.2931,
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "deviation_percentage": 25,
+              "deviations": 4,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "284.48275862068965", "Timestamp": "1702399047.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399107.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399167.888" },
+              { "Value": "290.68965517241384", "Timestamp": "1702399227.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399287.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399347.888" },
+              { "Value": "282.4137931034483", "Timestamp": "1702399407.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399467.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399527.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399587.888" },
+              { "Value": "284.48275862068965", "Timestamp": "1702399647.888" },
+              { "Value": "281.3793103448276", "Timestamp": "1702399707.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399767.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399827.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399887.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%222.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%222.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"baseline_processing\",status=~\"2.*\"}[15m]))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "284.48275862068965", "Timestamp": "1702399047.888" },
+              { "Value": "287.58620689655174", "Timestamp": "1702399107.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399167.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399227.888" },
+              { "Value": "291.7241379310345", "Timestamp": "1702399287.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399347.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399407.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399467.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399527.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399587.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399647.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399707.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399767.888" },
+              { "Value": "284.48275862068965", "Timestamp": "1702399827.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399887.888" },
+              { "Value": "282.4137931034483", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%222.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%222.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"candidate_processing\",status=~\"2.*\"}[15m]))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 2,
+            "mean_simple_dev": -0,
+            "median_absolute_deviation": 0,
+            "mse": 2,
+            "rmse": 2,
+            "simpledev": -0.19396000000000413,
+            "std_dev": 0,
+            "zscore_deviation": 25
+          },
+          "degradation": false,
+          "direction": "up",
+          "unit": "count",
+          "value": 0.19396000000000413
+        }
+      },
+      "Requests_4xx": {
+        "baseline": { "mean": 0, "standard_deviation": null, "unit": "Reqs" },
+        "candidate": { "mean": 0, "standard_deviation": null, "unit": "Reqs" },
+        "debug": {
+          "baseline": {
+            "data": null,
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%224.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%224.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"baseline_processing\",status=~\"4.*\"}[15m]))"
+          },
+          "candidate": {
+            "data": null,
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%224.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%224.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"candidate_processing\",status=~\"4.*\"}[15m]))"
+          },
+          "errorMsg": "Result is Empty:Datapoints is missing in the result."
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {},
+          "degradation": false,
+          "direction": null,
+          "unit": "percent",
+          "value": 0
+        }
+      },
+      "Requests_5xx": {
+        "baseline": { "mean": 0, "standard_deviation": null, "unit": "Reqs" },
+        "candidate": { "mean": 0, "standard_deviation": 0, "unit": "Reqs" },
+        "debug": {
+          "baseline": {
+            "data": null,
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%225.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%2Cstatus%3D~%225.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"baseline_processing\",status=~\"5.*\"}[15m]))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "0", "Timestamp": "1702399047.888" },
+              { "Value": "0", "Timestamp": "1702399107.888" },
+              { "Value": "0", "Timestamp": "1702399167.888" },
+              { "Value": "0", "Timestamp": "1702399227.888" },
+              { "Value": "0", "Timestamp": "1702399287.888" },
+              { "Value": "0", "Timestamp": "1702399347.888" },
+              { "Value": "0", "Timestamp": "1702399407.888" },
+              { "Value": "0", "Timestamp": "1702399467.888" },
+              { "Value": "0", "Timestamp": "1702399527.888" },
+              { "Value": "0", "Timestamp": "1702399587.888" },
+              { "Value": "0", "Timestamp": "1702399647.888" },
+              { "Value": "0", "Timestamp": "1702399707.888" },
+              { "Value": "0", "Timestamp": "1702399767.888" },
+              { "Value": "0", "Timestamp": "1702399827.888" },
+              { "Value": "0", "Timestamp": "1702399887.888" },
+              { "Value": "0", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%225.%2A%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%2Cstatus%3D~%225.%2A%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"candidate_processing\",status=~\"5.*\"}[15m]))"
+          },
+          "errorMsg": "Result is Empty:Datapoints is missing in the result."
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {},
+          "degradation": false,
+          "direction": null,
+          "unit": "percent",
+          "value": 0
+        }
+      },
+      "Total_Requests": {
+        "baseline": {
+          "mean": 286,
+          "standard_deviation": 2.61114,
+          "unit": "Reqs"
+        },
+        "candidate": {
+          "mean": 286,
+          "standard_deviation": 2.65007,
+          "unit": "Reqs"
+        },
+        "debug": {
+          "algos": {
+            "mae": {
+              "deviation": 2,
+              "mae_value": [25.862079999999935],
+              "name": "MeanAbsoluteError",
+              "no_of_datapoints": 16
+            },
+            "mean_simple_dev": {
+              "deviation": -0,
+              "length_of_datasets": 16,
+              "name": "MeanSimpleDeviation",
+              "no_of_datapoints": 16,
+              "simple_div_sum": -0.0111859
+            },
+            "median_absolute_deviation": {
+              "absolute_deviation": [
+                1.03448, 2.06897, 4.13793, 4.13793, 6.2069, 0, 0, 4.13793,
+                1.03448, 1.03448, 2.06896, 2.06896, 2.06896, 1.03448, 1.03448,
+                3.10345
+              ],
+              "baseline_median": 285.51724,
+              "deviation": 0,
+              "deviation_slice": [
+                287.58621, 289.65517, 289.65517, 291.72414, 289.65517,
+                283.44828, 283.44828, 283.44828, 282.41379
+              ],
+              "median_absolute_deviation": 1.03448,
+              "name": "MedianAbsoluteDeviation",
+              "threshold_value": 1.03448
+            },
+            "mse": {
+              "deviation": 2,
+              "mseValue": [29.42928014280003],
+              "name": "MeanSquareError",
+              "no_of_datapoints": 16
+            },
+            "rmse": {
+              "name": "RootMeanSquareError",
+              "no_of_datapoints": 16,
+              "sum_of_squared_absolute_diff": 58.8585603
+            },
+            "simpledev": {
+              "baseline_mean": 286.09914,
+              "candidate_mean": 286.2931,
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "degradation_type": "count",
+              "deviation": -0.19396000000000413,
+              "name": "SimpleDeviationAlgo",
+              "threshold": 30
+            },
+            "std_dev": {
+              "baseline_deviation": 2.61114,
+              "baseline_mean": 286.09914,
+              "candidate_mean": 286.2931,
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "name": "DeviationStdDeviationAlgo"
+            },
+            "zscore_deviation": {
+              "datasetOne": [
+                284.48276, 286.55172, 289.65517, 290.68966, 289.65517,
+                286.55172, 282.41379, 286.55172, 289.65517, 285.51724,
+                284.48276, 281.37931, 285.51724, 283.44828, 285.51724, 285.51724
+              ],
+              "datasetTwo": [
+                284.48276, 287.58621, 289.65517, 289.65517, 291.72414,
+                285.51724, 285.51724, 289.65517, 286.55172, 286.55172,
+                283.44828, 283.44828, 283.44828, 284.48276, 286.55172, 282.41379
+              ],
+              "deviation_percentage": 25,
+              "deviations": 4,
+              "has_deviation": true,
+              "name": "ZScoreDeviation",
+              "num_of_deviations_percentage_threshold": 1,
+              "total_data_points": 16,
+              "z_score_threshold": 1
+            }
+          },
+          "baseline": {
+            "data": [
+              { "Value": "284.48275862068965", "Timestamp": "1702399047.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399107.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399167.888" },
+              { "Value": "290.68965517241384", "Timestamp": "1702399227.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399287.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399347.888" },
+              { "Value": "282.4137931034483", "Timestamp": "1702399407.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399467.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399527.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399587.888" },
+              { "Value": "284.48275862068965", "Timestamp": "1702399647.888" },
+              { "Value": "281.3793103448276", "Timestamp": "1702399707.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399767.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399827.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399887.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22baseline_processing%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"baseline_processing\"}[15m]))"
+          },
+          "candidate": {
+            "data": [
+              { "Value": "284.48275862068965", "Timestamp": "1702399047.888" },
+              { "Value": "287.58620689655174", "Timestamp": "1702399107.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399167.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399227.888" },
+              { "Value": "291.7241379310345", "Timestamp": "1702399287.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399347.888" },
+              { "Value": "285.51724137931035", "Timestamp": "1702399407.888" },
+              { "Value": "289.65517241379314", "Timestamp": "1702399467.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399527.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399587.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399647.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399707.888" },
+              { "Value": "283.448275862069", "Timestamp": "1702399767.888" },
+              { "Value": "284.48275862068965", "Timestamp": "1702399827.888" },
+              { "Value": "286.55172413793105", "Timestamp": "1702399887.888" },
+              { "Value": "282.4137931034483", "Timestamp": "1702399947.888" }
+            ],
+            "prometheus_api": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/api/v1/query_range?query=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%7D%5B15m%5D%29%29\u0026end=1702399947.000\u0026start=1702399047.000\u0026step=1m0s",
+            "prometheus_endpoint": "http://prometheus.sre-opus-retrograde.useast-dev-az-001.cluster.k8s.us.walmart.net/graph?g0.expr=sum%28increase%28engine_req_total_count%7Bservice%3D%22ccm-gql-dev-dce%22%2Crequest%3D%22candidate_processing%22%7D%5B15m%5D%29%29\u0026g0.tab=0\u0026g0.stacked=0",
+            "query": "sum(increase(engine_req_total_count{service=\"ccm-gql-dev-dce\",request=\"candidate_processing\"}[15m]))"
+          }
+        },
+        "deviation": {
+          "algo": "simpledev",
+          "all_algos": {
+            "mae": 2,
+            "mean_simple_dev": -0,
+            "median_absolute_deviation": 0,
+            "mse": 2,
+            "rmse": 2,
+            "simpledev": -0.19396000000000413,
+            "std_dev": 0,
+            "zscore_deviation": 25
+          },
+          "degradation": false,
+          "direction": "up",
+          "unit": "count",
+          "value": 0.19396000000000413
+        }
+      }
+    }
+  }
+}
